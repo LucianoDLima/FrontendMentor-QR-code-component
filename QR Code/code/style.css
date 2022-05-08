@@ -1,0 +1,93 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.5rem;
+  font-family: "Outfit";
+  background-color: #d6e2f0;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+}
+
+main .cardContainer {
+  width: 30rem;
+  background-color: white;
+  border-radius: 2rem;
+  -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 1440px) and (min-height: 750px) {
+  main .cardContainer {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+}
+
+main .cardContainer .qrCode-img {
+  padding: 1.5rem;
+  position: relative;
+}
+
+main .cardContainer .qrCode-img img {
+  position: relative;
+  width: 100%;
+  border-radius: calc(2rem / 2);
+  cursor: pointer;
+}
+
+main .cardContainer .qrCode-text {
+  padding-inline: 2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+main .cardContainer .qrCode-text h1 {
+  font-size: calc(100% + .5rem);
+  margin-bottom: 1rem;
+}
+
+main .cardContainer .qrCode-text p {
+  color: #7b879d;
+}
+
+footer {
+  position: absolute;
+  display: block;
+  font-size: 11px;
+  text-align: center;
+  bottom: 3%;
+  right: 0;
+  margin-right: 3%;
+}
+
+footer a {
+  color: #3e52a3;
+  text-decoration: none;
+}
+/*# sourceMappingURL=style.css.map */
